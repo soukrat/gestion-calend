@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Gestion Pédagogie',
+    'title' => 'Gestion Calendar',
 
     'title_prefix' => '',
 
@@ -30,7 +30,7 @@ return [
     |
     */
 
-    'logo' => '<b>Gestion</b>PD',
+    'logo' => '<b>Gestion</b>CD',
 
     'logo_mini' => '<b>G</b>PD',
 
@@ -129,6 +129,12 @@ return [
         [
             'text' => 'Intervenant',
             'url'  => 'admin/intervenants',
+            'icon' => 'lock',
+        ]
+        ,
+        [
+            'text' => 'Intervention',
+            'url'  => 'admin/intervention',
             'icon' => 'lock',
         ],
         [

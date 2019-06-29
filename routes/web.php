@@ -24,6 +24,8 @@ Route::resource('etudiants', 'EtudiantController');
 
 Route::resource('intervenants', 'IntervenantController');
 
+Route::resource('intervention', 'InterventionController');
+
 Route::resource('filieres', 'FiliereController');
 
 Route::resource('classes', 'ClasseController');

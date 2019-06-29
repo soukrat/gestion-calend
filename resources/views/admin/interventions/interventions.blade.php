@@ -6,28 +6,25 @@
 @endsection
 
 @section('content')
-<table class="table">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Date Début</th>
-        <th scope="col">Date Fin</th>
-        <th scope="col">Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>
-<button class="btn btn-primary">Show</button>
-<button class="btn btn-success">Edit</button>
-<button class="btn btn-danger">Delete</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+
+<!-- <script type="text/javascript" src="{{ URL::asset('js/jsCalendare/jquery.min.js') }}"></script>
+  <link rel="stylesheet" href="https://www.jqwidgets.com/public/jqwidgets/styles/jqx.base.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.jqwidgets.com/public/jqwidgets/styles/jqx.energyblue.css" type="text/css" />
+  <script type="text/javascript" src="{{ URL::asset('js/jsCalendare/jqx-all.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jsCalendare/globalize.js') }}"></script> -->
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://www.jqwidgets.com/public/jqwidgets/styles/jqx.base.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.jqwidgets.com/public/jqwidgets/styles/jqx.energyblue.css" type="text/css" />
+  <script type="text/javascript" src="https://www.jqwidgets.com/public/jqwidgets/jqx-all.js"></script>
+  <script type="text/javascript" src="https://www.jqwidgets.com/public/jqwidgets/globalization/globalize.js"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jsCalendare/app.js') }}"></script>
+  <link rel="stylesheet" href="{{ URL::asset('css/cssCalendare/app.css') }}" type="text/css" />
+
+  <div id="scheduler">
+        
+  </div>  
 
 
 
