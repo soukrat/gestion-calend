@@ -110,12 +110,6 @@ return [
     'menu' => [
         'MAIN NAVIGATION',
         [
-            'text'        => 'Dashboard',
-            'url'         => 'admin/pages',
-            'icon'        => 'file',
-        ],
-        'ACCOUNT SETTINGS',
-        [
             'text' => 'Users',
             'url'  => 'admin/users',
             'icon' => 'user',

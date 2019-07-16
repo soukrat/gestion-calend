@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var appointments = new Array();
-    alert(1)
+
 var appointment1 = {
     id_intervention: 1,
     interveur: "Himmi",

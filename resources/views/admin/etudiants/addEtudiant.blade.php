@@ -7,7 +7,7 @@
 
 @section('content')
 <div class="addEtudiant">
-        <form action="{{ url('users') }}" method="post">
+        <form action="{{ url('admin/etudiants') }}" method="post">
             {{ csrf_field() }}
 
             <div class="form-group">
@@ -16,15 +16,23 @@
             </div>
             <div class="form-group">
                 <label for="prenom">Prénom</label>
-                <input type="text" class="form-control" id="prenom" name="nom" placeholder="Entrer Prénom">
+                <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Entrer Prénom">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" class="form-control" id="email" name="nom" placeholder="Entrer Email">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Entrer Email">
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" name="nom" placeholder="Entrer Password">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Entrer Password">
+            </div>
+            <div class="form-group">
+              <label for="sel1">Select Classe:</label>
+              <select class="form-control" name="classe" id="sel1">
+                @foreach($classes as $classe)
+                <option value="{{$classe->id}}">{{$classe->libelle}}</option>
+                @endforeach
+              </select>
             </div>
             <button type="submit" class="btn btn-primary btn-block">Save</button>
         </form>

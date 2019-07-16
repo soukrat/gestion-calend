@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Etudiant;
+use App\Classe;
 use Illuminate\Http\Request;
 
 class EtudiantController extends Controller
@@ -32,7 +33,9 @@ class EtudiantController extends Controller
      */
     public function create()
     {
-        return view('admin.etudiants.addEtudiant');
+        $classes = Classe::all();
+
+        return view('admin.etudiants.addEtudiant', ['classes' => $classes]);
     }
 
     /**
@@ -45,8 +48,9 @@ class EtudiantController extends Controller
     {
         $etudiant = new Etudiant();
         $etudiant->nom = $request->input('nom');
-        $etudiant->prenom = $request->input('prename');
+        $etudiant->prenom = $request->input('prenom');
         $etudiant->email = $request->input('email');
+        $etudiant->classe_id = $request->input('classe');
         $etudiant->save();
 
         /*$user = new User();
